@@ -25,17 +25,16 @@ services:
       networks: 
         - web-dev
 
+
     db:
-      image: mysql:8.0.33
+      image: mysql:9.0.0
       container_name: webdev-mysql
       volumes: 
         - ./confs/mysql_db:/var/lib/mysql
-      command: --default-authentication-plugin=mysql_native_password
       environment:
-        MYSQL_ROOT_PASSWORD: root
-        MYSQL_DATABASE: test_db
-        MYSQL_USER: devuser
-        MYSQL_PASSWORD: devpass
+        MYSQL_DATABASE: root
+        MYSQL_PASSWORD: 
+        MYSQL_ALLOW_EMPTY_PASSWORD: true
       ports:
         - "3306:3306"
       networks: 

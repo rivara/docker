@@ -1,10 +1,10 @@
 <?php
-$host = 'db';
-$user = 'devuser';
-$password = 'devpass';
-$db = 'test_db';
+$host = 'db'; 
+$user = 'root';
+$password = '';
 
-$conn = new mysqli($host, $user, $password, $db);
+
+$conn = new mysqli($host, $user, $password);
 if ($conn->connect_error){
     echo 'connection failed' . $conn->connect_error;
 } else {

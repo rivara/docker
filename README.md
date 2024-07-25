@@ -1,21 +1,3 @@
-<div align="center">
-      <a href="https://alisonjuliano.com">
-        <img src="https://imgur.com/13kinqs.jpg">
-    </a>
-  <p>
-    <p style="font-style: italic;">"I decided to follow the path of rabbit hole, let's see how far this can take us" - <a href="https://alisonjuliano.com">AJ</a>
-    </p>
-    <p style="font-weight: bold;">Sharing, learning and knowing people all around the world. Let's code!</p>
-    <a href="https://alisonjuliano.com"> 
-    <img src="https://img.shields.io/static/v1?label=Fullstack&message=AJ&color=64ffda&style=for-the-badge&logo=dungeonsanddragons">
-    </a>
-    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-    <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
-    <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
-    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
-  </p>
-</div><br>
-
 <h1> Docker: Nginx, PHP (Laravel) and MySql. </h1>
 
 <p>With Docker Compose I'm running three containers, each one with: Nginx, PHP (with composer, xdebug and configs) and MySql.</p>
@@ -97,15 +79,6 @@ docker -v
 <pre>
 docker-compose build
 docker-compose up -d
-</pre>
-<p>Check <a href="http://localhost:80">localhost</a> in your browser and voilá</p>
-<h3>Ports used on the project:</h3>
-<ul>
-<li>http ->  80</li>
-<li>https -> 443</li>
-<li>php ->   9000</li>
-<li>mysql -> 3306</li>
-</ul><br>
 </section>
 <hr>
 
@@ -442,8 +415,8 @@ version: "3.9"
     networks: 
       - web-dev
     tty: true
-    
-  </pre>
+
+</pre>
   </li>
   <li>
   <h3>Network</h3>
@@ -457,6 +430,16 @@ version: "3.9"
 </ol>
 </section>
 <hr>
+
+
+  
+  *  Network
+
+  web-dev bring all containers together in a network.
+
+
+
+---
 
 <section id="test-db" style="padding: 10px;">
 <h2>Running and testing our project.</h2>
@@ -497,4 +480,3 @@ If you want help or send a feedback, get in my website and send me a e-mail:
         <img src="https://i.imgur.com/0aMXtBq.png" width="239" height="100">
     </a>
 </div>
-
