@@ -43,12 +43,5 @@ docker -v
 <blockquote>
 [<code>docker-compose</code>] will print all docker-compose commands and [<code>docker -v</code>] will print docker version.
 </blockquote><br>
-<p>Optional tools:</p>
-<ul>
-  <li><a href="https://git-scm.com/downloads">Git</a></li>
-  <li><p>Make (Chocolatey)</p> <code>choco install make</code></li>
-  </br>
-  <li><p>Make  (Ubuntu) </p><code>sudo apt-get -y install make</code></li>
-</ul>
 </section>
 <hr>
