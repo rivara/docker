@@ -1,7 +1,7 @@
 services: 
     web-server:
       image: nginx:1.21.1
-      container_name: webdev-nginx
+      container_name: nginx-docker
       ports:
         - "80:80"
         - "443:443"
@@ -17,7 +17,7 @@ services:
         dockerfile: ./php.dockerfile
         context: .
       image: php:8.2-fpm
-      container_name: webdev-php
+      container_name: php-docker
       volumes: 
         - ./projects:/var/www/projects
       ports: 
@@ -28,7 +28,7 @@ services:
 
     db:
       image: mysql:9.0.0
-      container_name: webdev-mysql
+      container_name: mysql-docker
       volumes: 
         - ./confs/mysql_db:/var/lib/mysql
       environment:
