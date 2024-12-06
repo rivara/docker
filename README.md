@@ -20,27 +20,11 @@ docker-compose stop
 docker-compose down
 ```
 
-
 </p>
 
 **Acesso localhost**
 
 ```txt
-http://localhost:4500
+http://localhost
+http://prueba.test/
 ```
-
-**Acesso phpMyAdmin**
-
-```txt
-http://localhost:8080
-
-login: root
-senha: root
-```
-
-**Referências**
-
-1. [Imagem - webdevops/php-apache](https://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache.html)
-2. [Imagem - MySQL](https://hub.docker.com/_/mysql)
-3. [Imagem - phpMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-4. [Como instalar - Docker e Docker Compose](#)
